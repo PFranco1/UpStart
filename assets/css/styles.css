@@ -528,11 +528,139 @@ img {
 
 
 /*=============== CHOOSE ===============*/
+.choose{
+  padding-bottom: 0;
+}
+
+.choose__overflow{
+  position:relative;
+}
+
+.choose__container{
+  row-gap: 3rem;
+}
+
+.choose__content .section__data{
+  margin-bottom: 2rem;
+}
+
+.choose__description{
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.choose__data{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+.choose__group{
+  text-align: center;
+}
+
+.choose__number{
+  font-size: var(--h1-font-size);
+  font-family: var(--font-black);
+  font-weight: 400;
+  margin-bottom: .25rem;
+}
+
+.choose__subtitle{
+  font-size: var(--small-font-size);
+}
+
+.choose__triangle{
+  height: 321px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.choose__triangle-1{
+  width: 305px;
+  background-color: var(--first-color);
+}
+.choose__triangle-2{
+  width: 205px;
+  background-color: var(--first-color-alt);
+}
+.choose__triangle-3{
+  width: 105px;
+  background-color: var(--first-color-dark);
+}
+
+.choose__img{
+  width: 260px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
 
 
 /*=============== PRICING ===============*/
+.pricing__container{
+  grid-template-columns: 285px;
+  justify-content: center;
+  row-gap: 2rem;
+}
 
+.pricing__card,
+.pricing__shape,
+.pricing__list{
+  display: grid;
+}
 
+.pricing__card{
+  row-gap: 2rem;
+  background-color: hsla(79, 6%, 64%, 0.07);
+  padding: 2rem 2.5rem;
+}
+
+.pricing__img{
+  width: 35px;
+}
+
+.pricing__shape{
+  width: 60px;
+  height: 60px;
+  background-color: var(--first-color-gray);
+  border-radius: 50%;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+
+.pricing__title{
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.pricing__number{
+  font-size: var(--h1-font-size);
+}
+
+.pricing__list{
+  row-gap: 1rem;
+}
+
+.pricing__item{
+  display:flex;
+  column-gap: .5rem;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.pricing__item i{
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.pricing__item-opacity{
+  opacity: .3;;
+}
 /*=============== CALCULATE ===============*/
 
 
