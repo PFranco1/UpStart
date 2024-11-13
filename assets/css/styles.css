@@ -305,7 +305,10 @@ img {
 }
 
 /* Change background header */
-
+.bg-header{
+  background-color: var(--body-color);
+  box-shadow: 0 4px 8px hsla(100, 12%, 4%, .3);
+}
 
 /* Active link */
 
@@ -408,7 +411,35 @@ img {
 }
 
 /*=============== LOGOS ===============*/
+.logos__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
 
+  /*
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  width: 200%;
+  */
+}
+
+.logos__img {
+  width: 128px;
+}
+
+/* Animation to scroll the logos from left to right
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+*/
 
 /*=============== PROGRAM ===============*/
 
