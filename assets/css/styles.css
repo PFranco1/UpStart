@@ -420,30 +420,29 @@ img {
   gap: 2rem;
   justify-items: center;
 }
-  /*
-  display: flex;
-  gap: 2rem;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: scroll 20s linear infinite;
-  width: 200%;
-  */
 
 
 .logos__img {
   width: 120px;
+
+  margin: 0 2.5rem;
 }
 
-/* Animation to scroll the logos from left to right
+.logos__track{
+  display: inline-flex;
+  animation: scroll 10s linear infinite;
+}
+
+/* Animation to scroll the logos from left to right*/
 @keyframes scroll {
   0% {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(-50%);
+      transform: translateX(-125%);
   }
 }
-*/
+
 
 /*=============== PROGRAM ===============*/
 .program__container{

@@ -94,6 +94,12 @@ sr.reveal('.choose__content', {origin: 'right'})
 
 
 /*=============== CALCULATE JS ===============*/
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector('.logos__track');
+    const logos = document.querySelectorAll('.logos__img');
+    const totalWidth = Array.from(logos).reduce((sum, img) => sum + img.clientWidth, 0);
+    track.style.animationDuration = `${totalWidth / 100}s`; // Adjust speed here
+});
 
 
 /*=============== EMAIL JS ===============*/
