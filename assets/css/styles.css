@@ -430,7 +430,8 @@ img {
 
 .logos__track{
   display: inline-flex;
-  animation: scroll 10s linear infinite;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
 }
 
 /* Animation to scroll the logos from left to right*/
@@ -439,7 +440,7 @@ img {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(-125%);
+      transform: translateX(-100%);
   }
 }
 

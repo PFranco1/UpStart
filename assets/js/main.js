@@ -88,18 +88,32 @@ const sr = ScrollReveal({
 
 sr.reveal('.home__data, .footer__container, .footer__group')
 sr.reveal('.home__img', {delay: 700, origin: 'bottom'})
-sr.reveal('.logos__img, .program__card, .pricing__card', {interval: 100})
+sr.reveal('.program__card, .pricing__card', {interval: 100})
 sr.reveal('.choose__img', {origin: 'left'})
 sr.reveal('.choose__content', {origin: 'right'})
 
 
-/*=============== CALCULATE JS ===============*/
+/*=============== LOGO SCROLL ===============*/
 document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector('.logos__track');
-    const logos = document.querySelectorAll('.logos__img');
-    const totalWidth = Array.from(logos).reduce((sum, img) => sum + img.clientWidth, 0);
-    track.style.animationDuration = `${totalWidth / 100}s`; // Adjust speed here
+    const logos = Array.from(track.children);
+
+    // Clone each logo and append to the track to create a seamless scroll effect
+    logos.forEach(logo => {
+        const clone = logo.cloneNode(true);
+        track.appendChild(clone);
+    });
+
+    // Calculate the total width of all logos including clones
+    const totalWidth = track.scrollWidth;
+    
+    // Set animation duration based on the total width of the duplicated track
+    track.style.animationDuration = `${totalWidth / 100}px`; // Adjust speed by modifying this factor
 });
+
+
+
+
 
 
 /*=============== EMAIL JS ===============*/
