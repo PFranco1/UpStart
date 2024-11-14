@@ -26,16 +26,16 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">Home</a>
+                            <a href="#home" class="nav__link active-link{">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#program" class="nav__link">Program</a>
+                            <a href="#program" class="nav__link active-link{">Program</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#choose" class="nav__link">Choose Us</a>
+                            <a href="#choose" class="nav__link active-link{">Choose Us</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#pricing" class="nav__link">Pricing</a>
+                            <a href="#pricing" class="nav__link active-link{">Pricing</a>
                         </li>
                         <div class="nav__link">
                             <a href="footer" class="button nav__button">
@@ -349,7 +349,7 @@
                     </p>
 
                     <form action="" class="footer__form" id="contact-form">
-                        <input type="email" name="user__email" placeholder="Your Email" class="footer__input" id="contact-user">
+                        <input type="email" name="user_email" placeholder="Your Email" class="footer__input" id="contact-user">
                         <button type="submit" class="button">
                             Subscribe
                         </button>
@@ -435,13 +435,18 @@
         </footer>
 
         <!--========== SCROLL UP ==========-->
-
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
 
         <!--=============== SCROLLREVEAL ===============-->
         <script src=""></script>
 
         <!--=============== EMAIL JS ===============-->
-        
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
