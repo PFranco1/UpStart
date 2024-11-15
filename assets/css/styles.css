@@ -415,34 +415,37 @@ img {
 
 /*=============== LOGOS ===============*/
 .logos__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  justify-items: center;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
+.logos__track {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite; /* Adjusted speed */
+}
 
 .logos__img {
   width: 120px;
-
-  margin: 0 2.5rem;
+  margin: 0 20px; /* Space between logos */
 }
 
-.logos__track{
-  display: inline-flex;
-  white-space: nowrap;
-  animation: scroll 20s linear infinite;
-}
-
-/* Animation to scroll the logos from left to right*/
-@keyframes scroll {
-  0% {
-      transform: translateX(0);
+/* Keyframes for smooth scrolling animation */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
   }
-  100% {
-      transform: translateX(-100%);
+  to {
+    transform: translateX(-100%); /* Changed to -100% for a seamless loop */
   }
 }
+
+
+
+
+
+
 
 
 /*=============== PROGRAM ===============*/
@@ -985,6 +988,7 @@ img {
   }
 
   .logos{
+    overflow: hidden;
     padding: 3.5rem 0 1rem;
   }
   .logos__img{

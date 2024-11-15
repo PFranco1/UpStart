@@ -93,23 +93,29 @@ sr.reveal('.choose__img', {origin: 'left'})
 sr.reveal('.choose__content', {origin: 'right'})
 
 
-/*=============== LOGO SCROLL ===============*/
+/*=============== LOGO SCROLL =============== */
 document.addEventListener("DOMContentLoaded", () => {
-    const track = document.querySelector('.logos__track');
+    const track = document.querySelector(".logos__track");
     const logos = Array.from(track.children);
-
-    // Clone each logo and append to the track to create a seamless scroll effect
+  
+    // Duplicate logos to ensure a seamless scroll effect
     logos.forEach(logo => {
-        const clone = logo.cloneNode(true);
-        track.appendChild(clone);
+      const clone = logo.cloneNode(true);
+      track.appendChild(clone);
     });
+  
+    // Calculate the total width of all logos, including the duplicates
+    const totalWidth = track.scrollWidth / 2; // Original width of one set
+  
+    // Set animation duration based on the total width
+    const speed = 0.005; // Adjust this value to control speed (lower = slower)
+    const duration = totalWidth * speed;
+    track.style.animationDuration = `${duration}s`;
+  });
+  
+  
 
-    // Calculate the total width of all logos including clones
-    const totalWidth = track.scrollWidth;
-    
-    // Set animation duration based on the total width of the duplicated track
-    track.style.animationDuration = `${totalWidth / 100}px`; // Adjust speed by modifying this factor
-});
+
 
 
 
