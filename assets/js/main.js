@@ -88,7 +88,7 @@ const sr = ScrollReveal({
 
 sr.reveal('.home__data, .footer__container, .footer__group')
 sr.reveal('.home__img', {delay: 700, origin: 'bottom'})
-sr.reveal('.program__card, .pricing__card', {interval: 100})
+sr.reveal(' .program__card, .pricing__card', {interval: 100})
 sr.reveal('.choose__img', {origin: 'left'})
 sr.reveal('.choose__content', {origin: 'right'})
 

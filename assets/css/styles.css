@@ -102,7 +102,8 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1124px;
-  margin: 0 auto;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .section {
@@ -946,6 +947,7 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1032px){
+  
   .nav{
     height: calc(var(--header-height) + 2rem);
   }
