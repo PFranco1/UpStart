@@ -437,7 +437,7 @@ img {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-144%); /* To enable seamless loop */
+    transform: translateX(-100%); /* To enable seamless loop */
   }
 }
 
@@ -608,6 +608,9 @@ img {
 
 
 /*=============== PRICING ===============*/
+
+
+
 .pricing__container{
   grid-template-columns: 285px;
   justify-content: center;
