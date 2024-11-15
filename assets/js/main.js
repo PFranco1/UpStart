@@ -109,8 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Set animation duration based on the total width
     const speed = 0.005; // Adjust this value to control speed (lower = slower)
-    const duration = totalWidth * speed;
-    track.style.animationDuration = `${duration}s`;
+    const duration1 = totalWidth * speed;
+    track.style.animationDuration = `${duration1}s`;
   });
   
   

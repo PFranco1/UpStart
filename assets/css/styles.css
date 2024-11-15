@@ -423,7 +423,7 @@ img {
 .logos__track {
   display: flex;
   white-space: nowrap;
-  animation: scroll-left 20s linear infinite; /* Adjusted speed */
+  animation: scroll-left linear infinite; /* Remove duration here, set in JS */
 }
 
 .logos__img {
@@ -437,7 +437,7 @@ img {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%); /* Changed to -100% for a seamless loop */
+    transform: translateX(-144%); /* To enable seamless loop */
   }
 }
 
