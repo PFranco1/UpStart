@@ -603,6 +603,7 @@ img {
   position: relative;
   z-index: 1;
   margin: 0 auto;
+  
 }
 
 
@@ -919,18 +920,25 @@ img {
   .choose__content .section__titles{
     justify-content: initial;
   }
+  .choose__img{
+    margin: 0 0 0 auto;
+  }
+  .choose__images{
+    position: relative;
+  }
+
   .pricing__container{
     grid-template-columns: repeat(2, 285px);
     gap: 2.5rem;
   }
 
-    .footer__container{
-      grid-template-columns: repeat(2, max-content);
-      justify-content: space-between;
-    }
-    .footer__content{
-      grid-template-columns: repeat(3, max-content);
-    }
+  .footer__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+  .footer__content{
+    grid-template-columns: repeat(3, max-content);
+  }
   
 }
 
