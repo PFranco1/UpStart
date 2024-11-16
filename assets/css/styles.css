@@ -13,7 +13,7 @@
   --first-color-alt: hsl(192, 67%, 52%);
   --first-color-dark: hsl(192, 63%, 50%);
   --first-color-gray: hsl(57, 6%, 64%);
-  --button-color-main: hsl(192, 10%, 73%);
+  --button-color-main: hsl(0, 0%, 100%);
   --title-color: hsl(0, 0%, 0%);
   --title-color-black: hsl(180, 4%, 12%);
   --text-color: hsl(0, 0%, 0%);
@@ -203,7 +203,7 @@ img {
 @media screen and (max-width: 1032px){
   .nav__menu{
     position: fixed;
-    background-color: hsl(180, 12%, 8%);
+    background-color: hsl(0, 0%, 100%);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     top: 0;
