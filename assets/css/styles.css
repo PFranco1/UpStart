@@ -242,7 +242,8 @@ img {
 
 .nav .nav__button{
   background-color: var(--button-color-main);
-  border:none;
+  border: 2px solid var(--first-color-light);
+  /*border:none;*/
 
 }
 /* For large devices */
